@@ -1,0 +1,48 @@
+/* dark theme */
+html .main[data-theme="dark"] {
+  --text_color: #fff;
+  --box_bg: #333;
+  background-color: var(--box_bg);
+}
+
+/* pink theme */
+html .main[data-theme="pink"] {
+  --text_color: #f69;
+  --box_bg: #fff2f6;
+  background-color: var(--box_bg);
+}
+
+/* default theme */
+:root .main[data-theme="light"],
+:root .main {
+  --text_color: #333;
+  --box_bg: #fff0;
+  background-color: var(--box_bg);
+}
+
+/* .main {
+  background: linear-gradient(90deg, var(--main-bgcolor), #fff0, var(--main-bgcolor)), var(--main-bgImages), repeat center center/2rem 2rem;
+} */
+
+html, :root {
+  font-size: 14px;
+}
+
+html,
+:root,
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  /* max-width: 2560px; */
+  margin: 0 auto 0;
+}
+
+* {
+  color: var(--text_color);
+  font-size: var(--font-size);
+}
